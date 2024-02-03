@@ -1,0 +1,47 @@
+
+HTTP1.1 Vs HTTP2
+
+HTTP is called as Hypertext Transfer Protocol. It was developed in the year 1991, it has been a fundamental communication protocol access to the World Wide Web. Even though the initial version the HTTP 1.1 was more popular and it was widely implemented, there were certain limitations in the usage of HTTP1.1 in contemporary digital landscape. Due to these issues HTTP 2 was developed and this updated version was developed to rectify the problems of HTTP v1.1 and to enhance the overall web experience.
+In the upcoming discussion, we will learn the following objectives.
+
+INTRODUCTION
+In 1991, Tim Berners-Lee introduced the first version of HTTP this was the protocol that makes the internet work. Then in 1997 an upgraded version called HTTP 1.1 became the standard for the internet. This new version brought in improvements like keeping connections alive, better ways of storing data (caching), and more efficient ways of transferring information (transfer encoding). Then in February 2015 a newer version HTTP/2, was released by the Internet Engineering Task Force (IETF). This version focused on making the internet faster, more efficient, and more secure. Nowadays, most popular web browsers like Chrome, Firefox, Internet Explorer, and Safari support HTTP/2, ensuring a better online experience for users.
+ 
+Why HTTP 2 Replaced HTTP 1.1
+
+As the technology developed and the Internet was evolving, HTTP 1.1 became outdated. This was the reason why HTTP 2 was developed However, some of the main reasons are
+
+1.Request Multiplexing
+In HTTP 1.1, each request and response were sent over a separate connection. For each request, a new connection had to be established, resulting in a high number of round trips required to load a webpage. HTTP 2 came with multiplexing of requests.
+
+ 
+
+2.Header Compression
+HTTP 1.1 did not have built-in support for header compression, so headers were sent in plain text, which meant that they took up a significant amount of bandwidth. As a result, while sending large numbers of headers or when sending headers over slow connections, problems were faced.
+These are the major reasons why HTTP 1.1 was replaced. However, there are other differences between the two versions are discussed below.
+
+KEY DIFFRENCES
+
+Developing HTTP2 over HTTP1.1 was to overcome the limitations of the previous version and to make more efficient Web Protocol. The main differences between them are 
+
+1.Predicting Resource Requests:
+In HTTP/1.1, the client-server initiates all requests for resources such as images, stylesheets, and scripts. The server can only respond to requests that it receives. This means that the client must first request the HTML of a web page, and then make additional requests for any additional resources it needs to render the page. This results in delayed page load times.
+
+Where HTTP 2 allows for server push, so the server proactively pushes resources to the client without the client needing to request them. These speeds up page load times as the client starts processing and rendering resources as soon as they are received.
+
+2.Buffer Overflow:
+In HTTP 1.1, a buffer overflow can occur when a client sends a request with a header that is larger than the server’s buffer size. This can cause the server to crash or become unresponsive. To prevent buffer overflow, servers typically have a maximum buffer size for incoming requests and reject any requests exceeding this limit.
+In HTTP 2, on the other hand, uses a more sophisticated approach to prevent buffer overflow. It uses a flow control mechanism that allows the server to send data to the client in small chunks rather than sending all the data at once.
+
+3.Multiplexing
+HTTP 2 supports multiplexing, allowing multiple requests and responses to be sent over a single connection simultaneously. This helps to reduce the latency and increase the overall performance of the connection. In contrast, HTTP 1.1 uses a separate connection for each request and response, resulting in increased latency and reduced performance.
+
+4.Binary Protocol
+HTTP 1.1 uses plain text to encode and transmit data. Though it is easy for humans to read and understand the data, it can be less efficient than a binary protocol.
+HTTP 2 uses a series of binary codes to encode and transmit data rather than plain text. Binary protocols are generally more efficient than text-based protocols because they can transmit data more compactly.
+
+CONCLUSION
+HTTP is the backbone of the internet and enables the creation and sharing of various types of information and resources. Without HTTP, the internet would not be able to function in the way that it does today. However, with time HTTP versions kept changing. HTTP/3 is the upcoming internet protocol developed to fix the shortcomings of its predecessor. However, there is so much left to do, and HTTP/2 is not going away any time soon.
+We hope the HTTP 2.0 vs. 1.1 comparison helps you understand the HTTP versions.
+
+

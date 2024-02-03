@@ -1,0 +1,30 @@
+In JavaScript, objects are one of the most fundamental data types, and they play a central role in the language. An object is a collection of key and its value, where each key is a string and each value can be of any primitive data types like strings, numbers, and Booleans.
+
+Objects in JavaScript are used to represent complex data structures and entities. They provide a way to organize and manipulate data in a structured manner. Objects can have properties and methods:
+
+Properties: Properties are the attributes of an object. They consist of a key and its corresponding value. Properties can be accessed and can be changed using dot notation (object.property) or bracket notation (object["property"]).
+
+Methods: Methods are functions that are associated with an object. They are properties whose values are functions. Methods allow objects to perform actions and manipulate their internal state.
+
+The syntax of creating object using object literal is given below:
+
+const object1 = {key1: value1,key2: value2,key3: value1,key4: value1}
+Property and value is separated by colon(:),  syntax for creating new object is: var object2 =newObj()
+
+Example: Const object1: {
+                         name: "srikanth",
+                          age: 36,
+                         address: "visakhapatnam",
+                         phoneno:9848032919,
+                         }
+
+
+To access propery of an object in Java is : objectName.property or objectName[“property”]
+
+example: object1.name or object1["name"]
+
+
+
+Objects in JavaScript are dynamic, you can add, modify, or delete properties. This flexibility makes objects powerful for representing real-world entities, managing application state, and implementing various programming patterns, such as object-oriented programming.
+
+
